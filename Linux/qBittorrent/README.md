@@ -8,7 +8,7 @@ AMD 版本，不支持ARM 架构。
 
 
 ```shell
-wget -O /usr/local/bin/ -c 'https://raw.githubusercontent.com/Vicshs/xiaoai/Software/Linux/qBittorrent/qbittorrent-nox'
+wget -O /usr/local/bin/qbittorrent-nox -c 'https://github.com/Vicshs/Software/raw/main/Linux/qBittorrent/qbittorrent-nox'
 chmod 755 /usr/local/bin/qbittorrent-nox
 ```
 
@@ -49,3 +49,9 @@ EOF
 ## 访问
 
 访问 `http://服务器公网IP地址:8080/` ，输入 Web UI 的初始用户名 `admin` 和初始密码 `adminadmin`
+
+
+
+
+
+/root/.local/share/data/qBittorrent/
