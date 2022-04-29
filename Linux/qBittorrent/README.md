@@ -1,3 +1,15 @@
+## 编译libtorrent
+```shell
+wget https://github.com/arvidn/libtorrent/releases/download/v1.2.11/libtorrent-rasterbar-1.2.11.tar.gz
+tar xf libtorrent-rasterbar-1.2.11.tar.gz
+
+cd libtorrent-rasterbar-1.2.11
+./configure --disable-debug --enable-encryption --with-libgeoip=system CXXFLAGS=-std=c++14
+make -j$(nproc)
+make install
+ldconfig
+```
+
 ## 下载文件
 
 
