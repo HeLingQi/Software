@@ -1,9 +1,9 @@
 ## 编译libtorrent
 ```shell
-wget https://github.com/arvidn/libtorrent/releases/download/v1.2.11/libtorrent-rasterbar-1.2.11.tar.gz
-tar xf libtorrent-rasterbar-1.2.11.tar.gz
+wget https://github.com/arvidn/libtorrent/releases/download/v1.2.16/libtorrent-rasterbar-1.2.16.tar.gz
+tar xf libtorrent-rasterbar-1.2.16.tar.gz
 
-cd libtorrent-rasterbar-1.2.11
+cd libtorrent-rasterbar-1.2.16
 ./configure --disable-debug --enable-encryption --with-libgeoip=system CXXFLAGS=-std=c++14
 make -j$(nproc)
 make install
@@ -56,8 +56,20 @@ EOF
 
 访问 `http://服务器公网IP地址:8080/` ，输入 Web UI 的初始用户名 `admin` 和初始密码 `adminadmin`
 
-
-
-
-
 /root/.local/share/data/qBittorrent/
+
+
+
+## 编译参数
+
+```shell
+##libtorrent-rasterbar
+./configure --disable-debug --enable-encryption --with-libgeoip=system CXXFLAGS=-std=c++14
+make -j$(nproc) && make install
+ldconfig
+
+##qBittorrent
+./configure --disable-gui --disable-debug
+make -j$(nproc) && make install
+```
+
