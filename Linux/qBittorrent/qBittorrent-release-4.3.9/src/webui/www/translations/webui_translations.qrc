@@ -1,6 +1,0 @@
-<RCC>
-    <qresource prefix="/www/translations">
-        <file>webui_en.qm</file>
-        <file>webui_zh.qm</file>
-    </qresource>
-</RCC>
